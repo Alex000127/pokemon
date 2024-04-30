@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <script>
+
+        let counter = 0;
+        function count()
+        {
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
+            if (counter % 10 == 0)
+            {
+                alert(`contador ${counter}`) 
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('button').onclick = count;
+        })
+        
+    </script>
+</head>
+<body>
+    <h1> 0 </h1>
+    <button>Count</button>
+
+
+</body>
+</html>
